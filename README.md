@@ -40,7 +40,7 @@ State Diagrams represents multiple states that the Coffee Maker can take.
 
 ### 3.Empty Boiler State:
 
-![Empty Boiler State](Coffee_Machine/DesignSequenceDiagrams/v2//UpdatedSequenceDiagram4.png)
+![Empty Boiler State](Coffee_Machine/Design/SequenceDiagrams/v2//UpdatedSequenceDiagram4.png)
 
 
 ### 4.Warmer State:

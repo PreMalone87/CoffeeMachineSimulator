@@ -22,7 +22,7 @@ During the design of the system it was designed based on the categories like Sen
 
 ### Sequence of Operation : 
 
-![Sequence Diagram](Coffee_Machine/Design/SequenceDiagrams/v2/UpdatedSequenceDiagram1.png)
+![Sequence Diagram](Coffee_Machine/Design/SequenceDiagrams/v2/UpdatesSequenceDiagram1.png)
 
 
 State Diagrams represents multiple states that the Coffee Maker can take.

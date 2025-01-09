@@ -7,21 +7,20 @@ The project tries to simulate the behaviour of the below coffee Machine:
 ![Coffee Maker](Coffee_Machine/Design/coffee_maker.png)
 
 
-Overview:
+##Overview:
 During the design of the system it was designed based on the categories like Sensors, Actuators and Controllers,  
 
 
-Use Case :
+##Use Case :
 [Use Case of CoffeeMaker](Coffee_Machine/Design/Use_Case.txt)
 
 
-Below Class Diagram Represent the High level overview and Design of the system:
-
+##System Design:
 
 ![Class Diagram](Coffee_Machine/Design/ClassDiagrams/v2/UpdatedClassDiagram.png)
 
 
-Sequence of Operation : 
+##Sequence of Operation : 
 
 ![Sequence Diagram](Coffee_Machine/Design/SequenceDiagrams/v2/UpdatedSequenceDiagram1.png)
 

@@ -23,25 +23,25 @@ Below Class Diagram Represent the High level overview and Design of the system:
 
 Sequence of Operation : 
 
-![Sequence Diagram](Coffee_Machine/Design/UpdatedSequenceDiagram1.png)
+![Sequence Diagram](Coffee_Machine/Design/SequenceDiagrams/v2/UpdatedSequenceDiagram1.png)
 
 
 State Diagrams that represent multiple states that the Coffee Maker can take 
 
 Brew State:
 
-![Brew State](Coffee_Machine/Design/UpdatedSequenceDiagram2.png)
+![Brew State](Coffee_Machine/Design/SequenceDiagrams/v2/UpdatedSequenceDiagram2.png)
 
 Interrupt State:
 
-![Interrupt State](Coffee_Machine/Design/UpdatedSequenceDiagram3.png)
+![Interrupt State](Coffee_Machine/Design/SequenceDiagrams/v2/UpdatedSequenceDiagram3.png)
 
 
 Empty Boiler State:
 
-![Empty Boiler State](Coffee_Machine/Design/UpdatedSequenceDiagram4.png)
+![Empty Boiler State](Coffee_Machine/DesignSequenceDiagrams/v2//UpdatedSequenceDiagram4.png)
 
 
 Warmer State:
 
-![Interrupt State](Coffee_Machine/Design/UpdatedSequenceDiagram5.png)
+![Interrupt State](Coffee_Machine/Design/SequenceDiagrams/v2/UpdatedSequenceDiagram5.png)

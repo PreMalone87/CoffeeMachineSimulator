@@ -1,0 +1,3 @@
+1.Add Smart pointers instead of normal pointers since memory leak is going on
+2.add override keyword for better readabiity
+3.Create a proper class diagram, Sequence diagram

@@ -1,0 +1,98 @@
+An initial state to start from must be given.
+
+
+Brew State => 20 seconds (starting from an empty pot)
+empty threshold pressure => 1.5 (standard pot provided)
+full threshold pressure => 6.5 
+
+
+time taken for pot to full from current state =>
+
+(20/5) seconds for per unit of pressure.
+x is the current pressure
+
+(6.5-x) is the required pressure to reach
+
+time taken to full the pot = 4 * (full threshold - x)
+
+
+
+
+Pressure also gradually increases
+
+(5/20) is the pressure increases per second = 0.25 units per second
+current pressure = prev_pressure + 0.25
+
+
+
+
+
+Full pot water can last for 2 Brew cycle
+which is 40 seconds
+Water_level_lasting_time = prev_level_lasting_time-1
+
+
+
+
+Consumer Simulator
+
+Edits variables that corrrespond to the state of the machine (all sensor values).
+edited variables
+float pressure_sensor_status;
+bool water_sensor_status;
+
+methods
+
+
+//invoke it if machine is in brew state
+has static variables that contain boiler_water_level, pressure_level, pot_level
+run()
+assumes the machine is in brew state currently. Executes the above logic and changes it's variables's values
+
+it also provides other methods that resembles consumer actions and can change the sensor status
+But ore than providing fuctions it's better to edit the config file that provides dynamicity 
+
+increase_water_level()
+remove pot()
+
+It reads the config file and can edit the water_status, pot_status on satisfying the conditions for either full pot/empty pot/empty pot or empty boiler 
+
+
+Contacting classes
+1)Must have a contact with controller to know if currently in brew state
+2) Scheduler will invoke it and it will fetch the state from controller ( Must introduce a field in function in Controller that stores and retrieves the current state )
+
+Later then edits the config file values : water_status, pot_status on satisfying the conditions for either full pot/empty pot/empty pot or empty boiler.
+
+
+Config file
+
+bool button_status = false;
+bool water_sensor_status = true;
+float pressure_sensor_status = 4.44;
+float empty_pressure_sensor_threshold = 1.5;
+float full_pressure_sensor_threshold = 6.5;
+
+According to scheduler, the file is first opened and read by controller then closed. Then the consumer_simulator opens, edits and closes (they don't overlap)
+
+Maybe in future we can have another file that helps in providing dynamic functions. Like emptying water, etc
+
+
+Creation create a controller => for it first create actuators
+Create a scheduler => for it first create monitors
+Create a Monitor => for it first pass a controller as arg (create a controller), create individual monitor sensors
+
+
+then do scheduler.schedule()
+
+
+ifstream ifs;
+ifs("file.txt")
+
+false
+
+
+
+
+
+

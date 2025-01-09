@@ -1,0 +1,24 @@
+Use Case
+1)User presses start button
+2)Pressure Sensor senses if pot is present, if present and empty then it tries to brew coffee, if it is full then it releases pressure valve to stop brewing
+
+Brewing coffee
+3)The water sensor checks if water is present, if not then indicator light is turned on, if present then continues brewing
+4)Boiler heater is turned on
+5)Brewing is stopped if -> water level decreases, pot is full, pot is removed
+
+Warming pot
+6) if pot is present and not empty then always turn on plate heater to keep it warm
+
+
+Objecs involved that requires control
+1)Start button
+2)Pressure sensor
+3)Boiler heater
+4)Indicator Light
+5)Plate heater
+6)Water Sensor
+7)Pressure Valve
+
+
+

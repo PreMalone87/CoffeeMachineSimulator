@@ -1,0 +1,46 @@
+Parameters
+
+pressure sensor pot detection (Sensor)=> not present, not full, full
+Start Button (Sensor)=> On, Off
+Water Sensor(Sensor) => Preseent, Not Present
+
+Plate Heater (Actuator)=> On, off
+Indicator Light (Actuator)=> on, Off
+Boiler Heater (Actuator)=> On/Off
+Pressure Valve (Actuator) => open, close
+
+
+
+
+States involved
+Brew Coffee, Pot full (stop brewing, start warming), empty boiler, no pot present (stop brewing) 
+
+States must also have priorities, but what if all i/p parameters are mentioned described in each state, then for sure only one state at atime can exist and no overlap woulde be there. but in that case a lot of state
+might come into existence since sequential combination of states would also not be required.
+
+Options => Apply priority and then sequential combination, write all possible states and then execute it or write interrupt states
+
+
+Brew Coffee => i/p parameters: empty or non full pot present, water is present || o/p parameters: on boiler heater, close pressure valve, on plate warmer
+Boiler is empty => i/p parameters: water sensor detects no water || o/p parameters (stop brewing if already brewing, turn on indicator light): off boiler heater, open pressure valve, on indicator light
+No pot present => i/p parameters: pressure sensor detects pot not present || o/p parameters (stop brewing): off boiler heater, open pressure valve
+pot full => i/p parameters: pressure sensor detects full pot || o/p parameters (stop brewing and start warming):  off boiler heater, open pressure valve, on plate warmer
+Warmer state => i/p parameters: pressure sensor detects not empty pot || o/p parameters: turn on plate warmer
+ 
+
+Flow diagram
+Coffee is brewing => interrupts possible (Boiler is empty, pot full, no pot present)
+Boiler is empty => is apralelly possible with warmer state
+pot full => Paralelly possible with warmer state
+
+
+
+Looks like states can overlap, ex: boiler can be empty but a pot full can be detected
+Solution : All parameters must be considered in i/p
+
+
+
+
+
+
+

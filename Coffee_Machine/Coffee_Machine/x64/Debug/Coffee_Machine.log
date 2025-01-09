@@ -1,0 +1,13 @@
+﻿  Actuator.cpp
+  Coffee_Machine.cpp
+  Consumer_Simulator.cpp
+C:\Users\IET-1260\source\repos\Coffee_Machine\Coffee_Machine\Consumer_Simulator.cpp(16,34): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\IET-1260\source\repos\Coffee_Machine\Coffee_Machine\Consumer_Simulator.cpp(22,40): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\IET-1260\source\repos\Coffee_Machine\Coffee_Machine\Consumer_Simulator.cpp(25,49): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Controller.cpp
+  Monitor.cpp
+  Scheduler.cpp
+  Sensor.cpp
+  Sensor_Status.cpp
+  Generating Code...
+  Coffee_Machine.vcxproj -> C:\Users\IET-1260\source\repos\Coffee_Machine\x64\Debug\Coffee_Machine.exe

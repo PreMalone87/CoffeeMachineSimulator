@@ -86,10 +86,6 @@ Create a Monitor => for it first pass a controller as arg (create a controller),
 then do scheduler.schedule()
 
 
-ifstream ifs;
-ifs("file.txt")
-
-false
 
 
 
